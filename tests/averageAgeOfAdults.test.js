@@ -1,6 +1,6 @@
 const averageAgeOfAdults = require('../solutions/averageAgeOfAdults');
 
-it('should return the average age of all users (only adults, over 18s)', () => {
+it('should return the average age of all users - only adults, over 18s', () => {
   const adult1 = {
     id: 2136523,
     name: 'Kirandeep Farrington',
@@ -21,7 +21,7 @@ it('should return the average age of all users (only adults, over 18s)', () => {
     .toStrictEqual(38);
 });
 
-it('should return the average age of all users (one adult, one at 18 yo exactly).', () => {
+it('should return the average age of all users - one adult, one at 18 yo exactly', () => {
   const eighteener = {
     id: 8743534,
     name: 'Becky Clarke',
@@ -37,7 +37,7 @@ it('should return the average age of all users (one adult, one at 18 yo exactly)
     .toStrictEqual(24);
 });
 
-test('should return the average age of all users (two at 18 yo exactly).', () => {
+test('should return the average age of all users - two at 18 yo exactly', () => {
   const eighteener1 = {
     id: 8743534,
     name: 'Becky Clarke',
@@ -53,7 +53,7 @@ test('should return the average age of all users (two at 18 yo exactly).', () =>
     .toStrictEqual(18);
 });
 
-test('should return the average age of all users (two adults, two underages).', () => {
+test('should return the average age of all users - two adults, two underages', () => {
   const adult1 = {
     id: 2136523,
     name: 'Kirandeep Farrington',
@@ -80,7 +80,7 @@ test('should return the average age of all users (two adults, two underages).', 
     .toStrictEqual(27);
 });
 
-test('should return the average age of all users (all underage).', () => {
+test('should return the average age of all users - all underage', () => {
   const underage1 = {
     id: 4733632,
     name: 'Anna-Marie Farley',

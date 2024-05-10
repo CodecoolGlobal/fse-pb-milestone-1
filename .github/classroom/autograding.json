@@ -1,44 +1,24 @@
 {
     "tests": [
       {
-        "name": "Test average age of adults",
+        "name": "should return the average age of all users - only adults, over 18s",
         "setup": "npm install",
-        "run": "npm run test-average",
+        "run": "npm run test -- -t 'should return the average age of all users - only adults, over 18s'",
         "input": "",
         "output": "",
         "comparison": "exact",
         "timeout": 5,
-        "points": 30
+        "points": 10
       },
       {
-        "name": "Test count confirmed",
+        "name": "should return the average age of all users - one adult, one at 18 yo exactly",
         "setup": "npm install",
-        "run": "npm run test-count",
+        "run": "npm run test -- -t 'should return the average age of all users - one adult, one at 18 yo exactly'",
         "input": "",
         "output": "",
         "comparison": "exact",
         "timeout": 5,
-        "points": 30
-      },
-      {
-        "name": "Test filter divisible",
-        "setup": "npm install",
-        "run": "npm run test-filter",
-        "input": "",
-        "output": "",
-        "comparison": "exact",
-        "timeout": 5,
-        "points": 30
-      },
-      {
-        "name": "Test find abacus",
-        "setup": "npm install",
-        "run": "npm run test-find",
-        "input": "",
-        "output": "",
-        "comparison": "exact",
-        "timeout": 5,
-        "points": 30
+        "points": 10
       }
     ]
   }

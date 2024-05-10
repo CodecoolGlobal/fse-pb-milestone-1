@@ -24,12 +24,12 @@ const user3 = {
   isConfirmed: false,
 };
 
-test('It should return 0, if the array is empty.', () => {
+test('It should return 0, if the array is empty', () => {
   expect(countConfirmed([]))
     .toStrictEqual(0);
 });
 
-test('It should return 0, if the array contains only non confirmed users.', () => {
+test('It should return 0, if the array contains only non confirmed users', () => {
   const nonConfirmed1 = {
     id: 3242342,
     username: 'belakovacs12',
@@ -50,7 +50,7 @@ test('It should return 0, if the array contains only non confirmed users.', () =
     .toStrictEqual(0);
 });
 
-test('It should return 1, if the array contain only 1, confimred user.', () => {
+test('It should return 1, if the array contain only 1, confimred user', () => {
   const confirmed = {
     id: 3242342,
     username: 'belakovacs12',
