@@ -18,7 +18,7 @@ it('should return the average age of all users (only adults, over 18s)', () => {
   };
 
   expect(averageAgeOfAdults([adult1, adult2, adult3]))
-    .toStrictEqual(0);
+    .toStrictEqual(38);
 });
 
 it('should return the average age of all users (one adult, one at 18 yo exactly).', () => {
@@ -34,7 +34,7 @@ it('should return the average age of all users (one adult, one at 18 yo exactly)
     age: 30,
   };
   expect(averageAgeOfAdults([eighteener, adult]))
-    .toStrictEqual(0);
+    .toStrictEqual(24);
 });
 
 test('should return the average age of all users (two at 18 yo exactly).', () => {
@@ -50,7 +50,7 @@ test('should return the average age of all users (two at 18 yo exactly).', () =>
     age: 18,
   };
   expect(averageAgeOfAdults([eighteener1, eighteener2]))
-    .toStrictEqual(0);
+    .toStrictEqual(18);
 });
 
 test('should return the average age of all users (two adults, two underages).', () => {
@@ -77,7 +77,7 @@ test('should return the average age of all users (two adults, two underages).', 
   };
 
   expect(averageAgeOfAdults([adult1, adult2, underage1, underage2]))
-    .toStrictEqual(0);
+    .toStrictEqual(27);
 });
 
 test('should return the average age of all users (all underage).', () => {
@@ -94,5 +94,5 @@ test('should return the average age of all users (all underage).', () => {
   };
 
   expect(averageAgeOfAdults([underage1, underage2]))
-    .toStrictEqual(0);
+    .toStrictEqual(NaN);
 });
